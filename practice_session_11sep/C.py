@@ -3,7 +3,7 @@ class IO():
         return input().strip()
     
     def getInt(self):
-        return int(input().strip())
+        return int(input())
     
     def getStrList(self):
         return self.getStr().split(' ')
@@ -16,14 +16,22 @@ class IO():
     
     def strList(self, li):
         return " ".join(map(str, li))
-io = IO() 
+io = IO()        
+
+N = io.getInt()
+machines = io.getStr()
+
+coffee = 0
+output = 0
+for machine in machines:
+    if machine == '1':
+        output += 1
+        coffee = 2
+    else:
+        if coffee:
+            output += 1
+            coffee -= 1
 
 
-def problem_name():
-    global s
-    pass
-
-problem_name()
-
-# output
-print()
+    
+print(output)

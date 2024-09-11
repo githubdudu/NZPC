@@ -3,7 +3,7 @@ class IO():
         return input().strip()
     
     def getInt(self):
-        return int(input().strip())
+        return int(input())
     
     def getStrList(self):
         return self.getStr().split(' ')
@@ -16,14 +16,10 @@ class IO():
     
     def strList(self, li):
         return " ".join(map(str, li))
-io = IO() 
+io = IO()        
 
+N = io.getInt()
 
-def problem_name():
-    global s
-    pass
-
-problem_name()
-
-# output
-print()
+output = None
+    
+print(1, N)

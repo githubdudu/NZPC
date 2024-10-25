@@ -13,7 +13,7 @@
             "console": "integratedTerminal",
             "args": [
                 "<",
-                "${fileDirname}/testL1"
+                "${fileDirname}/ftest.text"
             ]
         }
     ]
